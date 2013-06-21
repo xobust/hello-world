@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+p, h1
+{
+    font-family: Oswald;
+    margin-bottom: 0;
+}
+
+h1
+{
+    color: #3b3b3b;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+p
+{
+    color: #6d6d6d;
+}
+
+
+.hidden
+{
+
+    display: none;
+
+}
+
+.in
+{
+    margin-top: 0;  
+    border: 0;
+    border-radius: 12px;
+
+    width: 80%;
+    height: 30px;
+
+    padding-left: 10px;
+    font-weight: bold;
+
+    color: #494949;
+
+}
+
+
+.but
+{
+
+    background-color: #6eaf6e;
+    border-radius: 16px;
+    border: 0;
+    width: 30%;
+    height: 30px;
+    font-family: Oswald;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 35%;
+    display: inline;
+    cursor:pointer;
+
+}
+
+
+.top 
+{
+    text-align: right;
+    padding-right: 20px;
+    height: 25px;
+    background-color: #a0c8ee;
+    -webkit-border-bottom-right-radius: 16px;
+    -webkit-border-bottom-left-radius: 16px;
+    -moz-border-radius-bottomright: 16px;
+    -moz-border-radius-bottomleft: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+}
+
+.top a
+{
+
+    color: #707070;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    -webkit-border-bottom-right-radius: 12px;
+    -webkit-border-bottom-left-radius: 12px;
+    -moz-border-radius-bottomright: 12px;
+    -moz-border-radius-bottomleft: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #E8E8E8 ;
+    top: 10px;
+
+}
+
+.top a:hover
+{
+
+
+    background-color: #FFFF66;
+
+}
+
+
+
+#middel
+{
+
+	margin-top: 75px;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 40%;
+    min-width: 400px;
+	min-height:200px;
+
+	padding: 50px 100px 50px 100px;
+}
+
+
+#lists
+{
+    padding: 50px;
+
+    min-height: 300px;
+    width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+
+.box
+{
+
+    background-color: #a0c8ee;
+    border-radius: 16px;
+
+}
+
+
+.yellowbox
+{
+
+    background-color: yellow;
+    border-radius: 16px;
+
+    padding: 10px;
+
+}
+
+
+.list
+{
+    background-color:#F9F9F9;
+    border:1px solid #EEEEEE;
+    list-style:none;
+    margin:6px;
+    padding:6px 9px;
+    position:relative;
+
+    /* CSS3 text shadow and rounded corners: */
+    text-shadow:1px 1px 0 white;
+
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+
+
+}
+
+
+.todo,.list input{
+    border:1px solid #CCCCCC;
+    color:#666666;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:0.725em;
+    padding:3px 4px;
+    width:50%;
+}
+
+
+ul.todoList{
+    margin:0 auto;
+    position:relative;
+}
+
+ul.todoList li{
+    background-color:#F9F9F9;
+    border:1px solid #EEEEEE;
+    list-style:none;
+    margin:6px;
+    padding:6px 9px;
+    position:relative;
+    cursor:n-resize;
+    width: 100%;
+
+    /* CSS3 text shadow and rounded corners: */
+    text-shadow:1px 1px 0 white;
+    border-radius:6px;
+}
+
+ul.todoList li:hover{
+    border-color:#9be0f9;
+
+    /* CSS3 glow effect: */
+    -moz-box-shadow:0 0 5px #A6E5FD;
+    -webkit-box-shadow:0 0 5px #A6E5FD;
+    box-shadow:0 0 5px #A6E5FD;
+}
+
+.actions a
+{
+    display:inline-block;
+    width: 40px;
+    height: 36px;   
+    text-indent:-9999px;
+}
+
+.text{
+	color:#777777;
+	font-size:1.4em;
+}
+
+
+.actions{
+	position:absolute;
+	right: 7px;
+	top:0px;
+}
+
+.public
+{
+    background-image: url("images/public.png");
+}
+
+.edit
+{
+    background-image: url("images/edit.png");
+}
+
+.delete
+{
+    background-image: url("images/delete.png");
+}
+
+
+.desc
+{
+    cursor: default;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #CCFFFF;
+    border-radius: 16px;
+
+    overflow: hidden;
+    max-height: 390px;
+
+}
+
+.desc:hover
+{
+
+    max-height: 10000px;
+
+}
+
+
+.desc *
+{
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.desc .in
+{
+
+    width: 95%;
+    height: 100px;
+
+}
+
+
+.desc:empty
+{
+    display:none;
+}
+
+
+.editTodo{
+    display:inline;
+    font-size:0.6em;
+    padding-left:9px;
+}
+
+.editTodo a{
+    font-weight:bold;
+}
+
+#addButton
+{
+
+    margin-top: 30px;
+    
+}
+
+a.discardChanges{
+    color:#C00 !important;
+}
+
+a.saveChanges{
+    color:#4DB209 !important;
+}
+
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#middel,#lists {overflow:auto;
+    margin-bottom: 70px;}  /* must be same height as the footer */
+
+
+
+.botom div
+{
+
+    position: absolute;
+    right: 30px;
+
+}
+
+.botom p
+{
+    position: absolute;
+    left: 42%;
+}
+
+.botom a
+{
+    text-decoration: none;
+    color: #0066FF;
+    margin-left: 10px;
+}
+
+.botom a:hover
+{
+    background-color: #909090;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+}
+
+
+
+.botom {
+
+    position: relative;
+    margin-top: -50px; /* negative value of footer height */
+    height: 50px;
+    clear:both;
+
+    width:100%;
+
+    background-color: #a0c8ee;
+    -webkit-border-top-right-radius: 16px;
+    -webkit-border-top-left-radius: 16px;
+    -moz-border-radius-topright: 16px;
+    -moz-border-radius-topleft: 16px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+
+    border-top: 1px solid #888888;
+    padding-top: 2px;
+
+} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+    <style type="text/css">
+        #wrap {display:table;height:100%}
+    </style>
+<![endif]-->
+
+*/
